@@ -1,11 +1,17 @@
+.rolled-number {
+  color: red;
+  font-weight: bold;
+  font-size: 30px;
+}
+
 .player1-turn {
   display: none;
 }
 
-#player1-good-roll {
+.player1-good-roll {
   display: none;
 }
 
-#player1-bad-roll {
+.player1-bad-roll {
   display: none;
 }
