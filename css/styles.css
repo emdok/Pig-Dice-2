@@ -1,0 +1,11 @@
+.player1-turn {
+  display: none;
+}
+
+#player1-good-roll {
+  display: none;
+}
+
+#player1-bad-roll {
+  display: none;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pig Dice</title>
+  </head>
+  <body>
+  <div class="container">
+    <div class="row">
+      <div class="jumbotron">
+      <h1>Pig Dice</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+
+        <div class="player-names">
+          <h2>Let's Play!</h2>
+          <p>Enter your names to begin the game:</p>
+          <form>
+            <div class="form-group">
+              <label for="player1">Player 1:</label>
+              <input id="player1" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="player2">Player 2:</label>
+              <input id="player2" class="form-control" type="text">
+            </div>
+            <button type="submit" class="btn btn-info">Enter</button>
+          </form>
+        </div>
+
+        <div class="player1-turn">
+          <h2>Roll the Dice Player 1!</h2>
+          <br>
+          <button id="player1-roll" type="click" class="btn">LETS ROLL!</button>
+        </div>
+
+        <div id="player1-good-roll">
+          <h2>Nice Work!</h2>
+          <p>You rolled a <span id="player1-rolled-number"></span> for a new score of <span id="player1-new-score"></span>!</p>
+          <p>Roll again if you're feeling lucky, or hold onto your points and pass to <span id="player2-name"></span>.</p>
+          <button id="player1-roll-dice" type="click" class="btn">ROLL AGAIN</button>  <button id="goto-player2" type="click" class="btn">HOLD</button>
+        </div>
+        <div id="player1-bad-roll">
+          <h2>Bummer Dude!</h2>
+          <p>Luck was not on your side <span id="player1-name"></span>.  You rolled a 1 and have lost all of your points.  Don't worry though, you still have time to catch up!</p>
+          <h2>Your turn to roll the dice <span id="player2-name"></span>!</h2>
+          <button id="goto-player2" type="click" class="btn">NEXT</button>
+        </div>
+
+
+
+      </div>
+
+
+      <div class="col-md-4">
+        <h1>How to Play Pig Dice</h1>
+        <ul>
+          <li>Pig Dice is a classic 2-player numbers game.</li>
+          <li>The object of the game is to be the first person to reach 100 points.</li>
+          <li>Each player has a chance to roll the die and either keep your points and roll again, or keep your points and hold, passing play to the next player.</li>
+          <li>If you roll numbers 2-6, they are added to each player's scoreboard, helping you reach that goal of 100 points.</li>
+          <li>HOWEVER, IF YOU ROLL A 1 you lose all of your points and play gets passed to the next player.</li>
+        </ul>
+        <h2>GOOD LUCK!</h2>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
