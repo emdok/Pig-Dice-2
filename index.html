@@ -34,7 +34,7 @@
         </div>
 
         <div class="player1-turn">
-          <h2>Roll the Dice <span class="player1-name">Player 1</span>!</h2>
+          <h2>Roll the Dice <span class="player1-name"></span>!</h2>
           <br>
           <button id="player1-roll" type="click" class="btn">LETS ROLL!</button>
         </div>
@@ -52,7 +52,29 @@
           <button id="goto-player2" type="click" class="btn">NEXT</button>
         </div>
 
+        <div class"player2-turn">
+          <h2>Roll the Dice <span class="player2-name"></span>!</h2>
+          <br>
+          <button id="player2-roll" type="click" class="btn">LETS ROLL!</button>
+        </div>
 
+        <div class="player2-good-roll">
+          <h2>Great Job!</h2>
+          <p>You rolled a <span class="player2-rolled-number" class="rolled-number"></span> for a new score of <span id="player2-new-score"></span>!</p>
+          <p>Roll again if you're feeling lucky, or hold onto your points and pass to <span class="player1-name"></span>.</p>
+          <button id="player2-roll-dice" type="click" class="btn">ROLL AGAIN</button>  <button id="goto-player1" type="click" class="btn">HOLD</button>
+        </div>
+        <div class="player2-bad-roll">
+          <h2>Womp Womp!</h2>
+          <p>Luck was not on your side <span class="player2-name"></span>.  You rolled a 1 and have lost all of your points.  Don't worry though, you still have time to catch up!</p>
+          <h2>Your turn to roll the dice <span class="player1-name"></span>!</h2>
+          <button id="goto-player1" type="click" class="btn">NEXT</button>
+        </div>
+
+        <div id="winner">
+        <h1>WE HAVE A WINNER JOHNNY!</h1>
+        
+        </div>
 
       </div>
 
