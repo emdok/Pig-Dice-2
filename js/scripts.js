@@ -9,12 +9,8 @@ Player.prototype.tally = function() {
 }
 
 //Random Number Generator
-var numberGenerator = Math.floor((Math.random() * 6) + 1);
-
-function randomNumber() {
-  return Math.random();
-
-};
+var numberGenerator = function() { return Math.floor((Math.random() * 6) + 1);
+}
 
 //Front End Logic
 $(function() {
@@ -28,10 +24,16 @@ $(function() {
       var playerTwo = $("input#player2").val();
       var newPlayerTwo = new Player(playerTwo, 0);
 
+      $(".player-names").hide();
+      $(".player1-turn").show();
 
       $("button#player1-roll").click(function() {
         $("#player1-rolled-number").text(numberGenerator);
         $("#player1-new-score").text(newPlayerOne.tally());
+        $(".player1-good-roll").show();
     });
   });
 });
+
+//
+Player.prototype.tally = function () { return this.turn + numberGenerator; }
